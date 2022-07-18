@@ -3,7 +3,8 @@ let cors = require('cors')
 let app = express()
 let PORT = 3000
 
-app.cors()
+app.use(cors())
+
 let starterPokemon = {
     'bulbasaur': {
         'type': 'Grass',
